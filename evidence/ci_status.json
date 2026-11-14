@@ -1,0 +1,49 @@
+{
+  "status": "NOT_RUN",
+  "reason": "Dedicated private repository registration and CI are next steps after research acceptance. No remote job executed in this correction.",
+  "public_release": "HOLD",
+  "jobs": [
+    {
+      "os": "ubuntu-latest",
+      "python": "3.11",
+      "status": "NOT_RUN",
+      "run_id": null,
+      "job_id": null
+    },
+    {
+      "os": "ubuntu-latest",
+      "python": "3.12",
+      "status": "NOT_RUN",
+      "run_id": null,
+      "job_id": null
+    },
+    {
+      "os": "ubuntu-latest",
+      "python": "3.13",
+      "status": "NOT_RUN",
+      "run_id": null,
+      "job_id": null
+    },
+    {
+      "os": "windows-latest",
+      "python": "3.11",
+      "status": "NOT_RUN",
+      "run_id": null,
+      "job_id": null
+    },
+    {
+      "os": "windows-latest",
+      "python": "3.12",
+      "status": "NOT_RUN",
+      "run_id": null,
+      "job_id": null
+    },
+    {
+      "os": "windows-latest",
+      "python": "3.13",
+      "status": "NOT_RUN",
+      "run_id": null,
+      "job_id": null
+    }
+  ]
+}
