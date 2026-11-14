@@ -1,0 +1,276 @@
+{
+  "counts": {
+    "eli": {
+      "matched": 5,
+      "total": 5
+    },
+    "jq": {
+      "matched": 1,
+      "total": 5
+    },
+    "json.tool": {
+      "matched": 1,
+      "total": 5
+    },
+    "python": {
+      "matched": 4,
+      "total": 5
+    }
+  },
+  "records": [
+    {
+      "case": "normal",
+      "mode": "json.tool",
+      "expected_contract_accept": true,
+      "result": {
+        "accepted": true,
+        "processes": 2,
+        "scope": "syntax only, duplicate keys accepted by default"
+      },
+      "contract_matched": true,
+      "runtime_seconds": 0.046793562999994265
+    },
+    {
+      "case": "normal",
+      "mode": "python",
+      "expected_contract_accept": true,
+      "result": {
+        "accepted": true,
+        "issues": []
+      },
+      "contract_matched": true,
+      "runtime_seconds": 0.00012721800004555917
+    },
+    {
+      "case": "normal",
+      "mode": "eli",
+      "expected_contract_accept": true,
+      "result": {
+        "accepted": true,
+        "exit_code": 0,
+        "rule_ids": []
+      },
+      "contract_matched": true,
+      "runtime_seconds": 0.0002461729999936324
+    },
+    {
+      "case": "normal",
+      "mode": "jq",
+      "expected_contract_accept": true,
+      "result": {
+        "accepted": true,
+        "scope": "JSON parsing and object shape only"
+      },
+      "contract_matched": true,
+      "runtime_seconds": 0.004950357000041095
+    },
+    {
+      "case": "gap",
+      "mode": "json.tool",
+      "expected_contract_accept": false,
+      "result": {
+        "accepted": true,
+        "processes": 2,
+        "scope": "syntax only, duplicate keys accepted by default"
+      },
+      "contract_matched": false,
+      "runtime_seconds": 0.04510646200003521
+    },
+    {
+      "case": "gap",
+      "mode": "python",
+      "expected_contract_accept": false,
+      "result": {
+        "accepted": false,
+        "issues": [
+          "sequence"
+        ]
+      },
+      "contract_matched": true,
+      "runtime_seconds": 8.996299999353141e-05
+    },
+    {
+      "case": "gap",
+      "mode": "eli",
+      "expected_contract_accept": false,
+      "result": {
+        "accepted": false,
+        "exit_code": 1,
+        "rule_ids": [
+          "SEQUENCE_GAP"
+        ]
+      },
+      "contract_matched": true,
+      "runtime_seconds": 0.00015036199999940436
+    },
+    {
+      "case": "gap",
+      "mode": "jq",
+      "expected_contract_accept": false,
+      "result": {
+        "accepted": true,
+        "scope": "JSON parsing and object shape only"
+      },
+      "contract_matched": false,
+      "runtime_seconds": 0.0027641610000159744
+    },
+    {
+      "case": "unsafe",
+      "mode": "json.tool",
+      "expected_contract_accept": false,
+      "result": {
+        "accepted": true,
+        "processes": 3,
+        "scope": "syntax only, duplicate keys accepted by default"
+      },
+      "contract_matched": false,
+      "runtime_seconds": 0.07797341799999913
+    },
+    {
+      "case": "unsafe",
+      "mode": "python",
+      "expected_contract_accept": false,
+      "result": {
+        "accepted": false,
+        "issues": [
+          "transition"
+        ]
+      },
+      "contract_matched": true,
+      "runtime_seconds": 8.226099998864811e-05
+    },
+    {
+      "case": "unsafe",
+      "mode": "eli",
+      "expected_contract_accept": false,
+      "result": {
+        "accepted": false,
+        "exit_code": 1,
+        "rule_ids": [
+          "FORBIDDEN_TRANSITION"
+        ]
+      },
+      "contract_matched": true,
+      "runtime_seconds": 0.00015778300002011747
+    },
+    {
+      "case": "unsafe",
+      "mode": "jq",
+      "expected_contract_accept": false,
+      "result": {
+        "accepted": true,
+        "scope": "JSON parsing and object shape only"
+      },
+      "contract_matched": false,
+      "runtime_seconds": 0.0026546589999725256
+    },
+    {
+      "case": "result",
+      "mode": "json.tool",
+      "expected_contract_accept": false,
+      "result": {
+        "accepted": true,
+        "processes": 2,
+        "scope": "syntax only, duplicate keys accepted by default"
+      },
+      "contract_matched": false,
+      "runtime_seconds": 0.05372590100000707
+    },
+    {
+      "case": "result",
+      "mode": "python",
+      "expected_contract_accept": false,
+      "result": {
+        "accepted": false,
+        "issues": [
+          "result"
+        ]
+      },
+      "contract_matched": true,
+      "runtime_seconds": 7.90170000186663e-05
+    },
+    {
+      "case": "result",
+      "mode": "eli",
+      "expected_contract_accept": false,
+      "result": {
+        "accepted": false,
+        "exit_code": 1,
+        "rule_ids": [
+          "MISSING_RESULT"
+        ]
+      },
+      "contract_matched": true,
+      "runtime_seconds": 0.00018348100002185674
+    },
+    {
+      "case": "result",
+      "mode": "jq",
+      "expected_contract_accept": false,
+      "result": {
+        "accepted": true,
+        "scope": "JSON parsing and object shape only"
+      },
+      "contract_matched": false,
+      "runtime_seconds": 0.00359507199999598
+    },
+    {
+      "case": "duplicate_key",
+      "mode": "json.tool",
+      "expected_contract_accept": false,
+      "result": {
+        "accepted": true,
+        "processes": 2,
+        "scope": "syntax only, duplicate keys accepted by default"
+      },
+      "contract_matched": false,
+      "runtime_seconds": 0.0506210980000219
+    },
+    {
+      "case": "duplicate_key",
+      "mode": "python",
+      "expected_contract_accept": false,
+      "result": {
+        "accepted": true,
+        "issues": []
+      },
+      "contract_matched": false,
+      "runtime_seconds": 9.416900002179318e-05
+    },
+    {
+      "case": "duplicate_key",
+      "mode": "eli",
+      "expected_contract_accept": false,
+      "result": {
+        "accepted": false,
+        "exit_code": 2,
+        "rule_ids": [
+          "INVALID_JSONL",
+          "SEQUENCE_START",
+          "MISSING_START"
+        ]
+      },
+      "contract_matched": true,
+      "runtime_seconds": 0.00017810299999609924
+    },
+    {
+      "case": "duplicate_key",
+      "mode": "jq",
+      "expected_contract_accept": false,
+      "result": {
+        "accepted": true,
+        "scope": "JSON parsing and object shape only"
+      },
+      "contract_matched": false,
+      "runtime_seconds": 0.002639176000002408
+    }
+  ],
+  "jq_status": "EXECUTED",
+  "human_work_seconds": null,
+  "limits": "Parsing tools do not implement lifecycle contracts. Python baseline supports fixed field names and basic contracts; ELI adds configured mappings, versions, bounds, source positions and external hash comparison. Timings include subprocess startup for parser tools; not a speed comparison.",
+  "source_physical_lines": {
+    "eli.py": 138,
+    "compare.py": 48
+  },
+  "reproduction_commands": 1
+}

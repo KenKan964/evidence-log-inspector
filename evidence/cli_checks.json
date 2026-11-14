@@ -1,0 +1,27 @@
+[
+  {
+    "case": "normal",
+    "exit_code": 0,
+    "status": "CONSISTENT_WITH_POLICY"
+  },
+  {
+    "case": "unsafe",
+    "exit_code": 1,
+    "status": "VIOLATION"
+  },
+  {
+    "case": "hold",
+    "exit_code": 0,
+    "status": "HOLD"
+  },
+  {
+    "case": "unknown",
+    "exit_code": 2,
+    "status": "UNVERIFIABLE"
+  },
+  {
+    "case": "incomplete",
+    "exit_code": 2,
+    "status": "UNVERIFIABLE"
+  }
+]

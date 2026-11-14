@@ -1,0 +1,3 @@
+{"stream_id": "demo", "sequence": 1, "event_type": "STARTED", "operation_id": "op-001", "log_version": "1"}
+{"stream_id": "demo", "sequence": 2, "event_type": "UNKNOWN", "operation_id": "op-001", "log_version": "1"}
+{"stream_id": "demo", "sequence": 3, "event_type": "COMPLETED", "operation_id": "op-001", "log_version": "1", "result": true}

@@ -1,0 +1,41 @@
+{
+  "policy_version": 1,
+  "rule_version": "eli-rules-v1",
+  "log_version": "1",
+  "fields": {
+    "stream_id": "stream_id",
+    "sequence": "sequence",
+    "event_type": "event_type",
+    "operation_id": "operation_id",
+    "log_version": "log_version",
+    "result": "result",
+    "evidence": "evidence",
+    "timestamp": "timestamp"
+  },
+  "sequence_start": 1,
+  "same_clock": false,
+  "transitions": {
+    "STARTED": [
+      "RETRY",
+      "UNKNOWN",
+      "COMPLETED",
+      "HOLD"
+    ],
+    "RETRY": [
+      "RETRY",
+      "UNKNOWN",
+      "COMPLETED",
+      "HOLD"
+    ],
+    "UNKNOWN": [
+      "RESOLVED",
+      "HOLD"
+    ],
+    "RESOLVED": [
+      "COMPLETED",
+      "HOLD"
+    ],
+    "HOLD": [],
+    "COMPLETED": []
+  }
+}
